@@ -1,0 +1,32 @@
+
+<app-route-notes> </app-route-notes>
+
+<!-- <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div> -->
+  <table class="table table-striped">
+    <thead>
+        <tr> 
+            <th>Title</th>
+            <th>Categories</th>
+            <th>Content</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let items of notes">
+            <th> {{items.title}} </th>
+            <th> {{items.categories}} </th>
+            <th> {{items.content}} </th>
+            <th></th>
+            <td>
+                
+                <!-- <button> <a routerLink="updatenotes/:id" >update</a>  </button>  -->
+
+                <button (click) = "deleteNotes(items.id)" class="btn btn-info"> Delete</button>
+            </td>
+
+        </tr>
+    </tbody>
+
+</table>

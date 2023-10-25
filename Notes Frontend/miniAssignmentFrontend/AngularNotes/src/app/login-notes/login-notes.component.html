@@ -1,0 +1,45 @@
+<div>
+  <div class="col-md-6 offset-md-3">
+    <h3>Login</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="user.username" name="username" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="user.password" name="password" />
+        </div>
+        <button class="btn btn-success" type="submit" >Login</button>
+        <input class="btn btn-success mybutton" type="reset" value="Reset">
+
+    </form>
+</div>
+<script>
+  function resetForm() {
+    document.getElementById("myForm").reset();
+  }
+  </script>
+
+
+  <!-- <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Username</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+      </div> 
+    
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+      </div>
+
+      <button> Login</button>
+
+</form> -->
+</div>
+
+<div>
+  <button > <a routerLink="/register" >Sign Up</a></button>
+</div>
+
+

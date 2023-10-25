@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3">
+<h3> Add Notes</h3>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" id="title" 
+          [(ngModel)]="notes.title" name="title" />
+    </div>
+    <div class="form-group">
+       <label>Categories</label>
+        <input type="text" class="form-control" id="categories" 
+          [(ngModel)]="notes.categories" name="categories" />
+    </div>
+    
+    <div class="form-group">
+        <label>Content</label>
+        <input type="text-area" row="5"class="form-control" id="content" 
+          [(ngModel)]="notes.content" name="content" />
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" row="5"class="form-control" id="email" 
+        [(ngModel)]="notes.email" name="email" />
+  </div>
+    <button class="btn btn-success" type="submit"></button>
+</form>
+</div>
+    
+        
+   
+    
